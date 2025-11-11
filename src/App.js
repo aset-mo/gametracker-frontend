@@ -1,3 +1,4 @@
+import "./styles.css";
 import { useEffect, useState } from "react";
 import { getGames, addGame, deleteGame, updateGame } from "./services/api";
 import GameList from "./components/gameList";
@@ -17,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       <h1>GameTracker</h1>
 
       <GameForm onSave={async (data) => {
