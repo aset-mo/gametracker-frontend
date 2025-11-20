@@ -1,24 +1,27 @@
-import "./styles.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import NavBar from "./components/navBar";
-import Home from "./pages/home";
-import Games from "./pages/games";
-import Contact from "./pages/contact";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Biblioteca from './components/Biblioteca'; 
+import GameForm from './components/GameForm';
+import Reviews from './components/Reviews'; 
 
 function App() {
   return (
-    <div className="container">
-      <BrowserRouter>
-        <NavBar />
-
+    <Router>
+      <div className="App">
+        
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/games" element={<Games />} />
-          <Route path="/contact" element={<Contact />} />
+          {/* 1. Main route. List of games */}
+          <Route path="/" element={<Biblioteca />} /> 
+          
+          {/* 2. routes to add and edit games */}
+          <Route path="/add" element={<GameForm />} /> 
+          <Route path="/edit/:id" element={<GameForm />} />
+          
+          {/* 3. Route to add reviews */}
+          <Route path="/reviews" element={<Reviews />} /> 
+          
         </Routes>
-      </BrowserRouter>
-    </div>
+      </div>
+    </Router>
   );
 }
 

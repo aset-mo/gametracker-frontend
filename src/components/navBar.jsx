@@ -5,7 +5,6 @@ export default function NavBar() {
     <nav style={{ marginBottom: "20px" }}>
       <Link to="/">Inicio</Link> |{" "}
       <Link to="/games">Juegos</Link> |{" "}
-      <Link to="/contact">Contacto</Link>
     </nav>
   );
 }
