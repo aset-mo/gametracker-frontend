@@ -166,3 +166,13 @@ body {
   border-radius: 6px;
   background-color: #ffffff;
 }
+
+/* Ensure long review text wraps and doesn't overflow the card */
+.review-item p {
+  white-space: pre-wrap;
+  /* preserve line breaks */
+  overflow-wrap: anywhere;
+  /* break long words/URLs */
+  word-break: break-word;
+  margin: 0 0 8px 0;
+}

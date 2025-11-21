@@ -9,6 +9,7 @@ const API_URL = 'http://localhost:4000/api/juegos';
 const GameCard = ({ game, onDelete }) => {
     // Use the names as per the backend schema (spanish)
     const statusText = game.completado ? 'Completado' : 'Pendiente / En Progreso';
+    const scoreVal = Number(game.puntuacion) || 0;
 
     return (
         <div className="game-card">
@@ -20,8 +21,8 @@ const GameCard = ({ game, onDelete }) => {
             <div className="game-info">
                 <h3>{game.titulo}</h3> {/* again, title */}
                 <p>Plataforma: {game.plataforma}</p> {/* here platform */}
-                <p>Estado: **{statusText}**</p>
-                <p>Puntuación: {'⭐'.repeat(game.puntuacion)} ({game.puntuacion}/5)</p> {/* Score! */}
+                <p>Estado: <strong>{statusText}</strong></p>
+                <p>Puntuación: {'⭐'.repeat(scoreVal)} ({scoreVal}/5)</p> {/* Score! */}
 
                 <div className="actions">
                     <Link to={`/edit/${game._id}`} className="button edit">Editar</Link>

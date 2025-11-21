@@ -55,11 +55,7 @@ const Reviews = () => {
         fetchData();
     }, [gameId]);
 
-    // Force a fetch on mount if the component somehow mounted with a gameId already
-    useEffect(() => {
-        if (!gameId) return;
-        // no-op: the main useEffect above will run because gameId is in its deps
-    }, []);
+    // (no additional mount-only effect needed; main useEffect handles gameId changes)
 
     // Generic change handler for form inputs. Handles numbers, checkboxes and text.
     const handleChange = (e) => {
@@ -88,7 +84,7 @@ const Reviews = () => {
         e.preventDefault();
         try {
             const reviewData = { ...newReview, gameId };
-                if (editingId) {
+            if (editingId) {
                 // Edit existing review
                 const response = await axios.put(`${API_REVIEWS_URL}/${editingId}`, reviewData);
                 setReviews(reviews.map(r => (r._id === editingId ? response.data : r)));
@@ -159,7 +155,7 @@ const Reviews = () => {
                         <option value="Hard">Difícil</option>
                     </select>
 
-                    
+
 
                     <label>Comentario Detallado:</label>
                     <textarea name="text" value={newReview.text} onChange={handleChange} required rows="5" maxLength={MAX_REVIEW_LENGTH}></textarea>
