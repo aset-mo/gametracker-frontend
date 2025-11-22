@@ -5,7 +5,7 @@ import Reviews from './components/Reviews';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/gametracker-frontend">
       <div className="App">
         
         <Routes>
