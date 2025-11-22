@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/gametracker-frontend/static/css/main.33f75fb8.css",
-    "main.js": "/gametracker-frontend/static/js/main.229fefd4.js",
+    "main.js": "/gametracker-frontend/static/js/main.da80ac6a.js",
     "index.html": "/gametracker-frontend/index.html",
     "main.33f75fb8.css.map": "/gametracker-frontend/static/css/main.33f75fb8.css.map",
-    "main.229fefd4.js.map": "/gametracker-frontend/static/js/main.229fefd4.js.map"
+    "main.da80ac6a.js.map": "/gametracker-frontend/static/js/main.da80ac6a.js.map"
   },
   "entrypoints": [
     "static/css/main.33f75fb8.css",
-    "static/js/main.229fefd4.js"
+    "static/js/main.da80ac6a.js"
   ]
 }
