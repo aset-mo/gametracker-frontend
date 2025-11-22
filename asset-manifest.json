@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gametracker-frontend/static/css/main.8e19cb6b.css",
-    "main.js": "/gametracker-frontend/static/js/main.57a69996.js",
+    "main.css": "/gametracker-frontend/static/css/main.33f75fb8.css",
+    "main.js": "/gametracker-frontend/static/js/main.229fefd4.js",
     "index.html": "/gametracker-frontend/index.html",
-    "main.8e19cb6b.css.map": "/gametracker-frontend/static/css/main.8e19cb6b.css.map",
-    "main.57a69996.js.map": "/gametracker-frontend/static/js/main.57a69996.js.map"
+    "main.33f75fb8.css.map": "/gametracker-frontend/static/css/main.33f75fb8.css.map",
+    "main.229fefd4.js.map": "/gametracker-frontend/static/js/main.229fefd4.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e19cb6b.css",
-    "static/js/main.57a69996.js"
+    "static/css/main.33f75fb8.css",
+    "static/js/main.229fefd4.js"
   ]
 }
